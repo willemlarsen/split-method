@@ -30,15 +30,20 @@ def word_array_push(word, array)
 end
 
 def first_word!(chars)
-  current_char = nil
-  word = ""
-  while current_char != " "
-    current_char = chars.shift
-    if current_char != " "
-      word += current_char
-    else return word
-    end
+  remove_leading_spaces!(chars)
+  return_word = ""
+  char = ""
+  while char != " " && !chars.empty?
+    char = chars.shift 
+    return_word += char unless char == " "
   end
+  return_word
 end
 
-
+def remove_leading_spaces!(chars)
+  char = chars.first
+  while char == " " do 
+    chars.shift
+    char = chars.first
+  end
+end
