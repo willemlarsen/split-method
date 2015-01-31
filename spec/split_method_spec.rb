@@ -62,6 +62,10 @@ end
 
 describe 'next word getter' do
   it 'adds next word to words found so far' do
+    so_far = []
+    to_parse = ["a", "b", " ", "c", "d"]
+    result = get_next_word([so_far, to_parse])
+    expect(result[0]).to eq(["ab"])
   end
 
   it 'remembers what"s left to parse' do
