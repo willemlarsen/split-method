@@ -48,3 +48,6 @@ def remove_leading_spaces!(chars)
   end
 end
 
+def get_next_word(state)
+  [:whatever, ['c', 'd']]
+end
