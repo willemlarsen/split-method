@@ -62,5 +62,9 @@ end
 
 describe 'next word getter' do
   it 'remembers what"s left to parse' do
+    words_parsed_so_far = ["one"]
+    chars = ['t', 'w', 'o', ' ', 'b', 'u', 'c', 'k', 'l', 'e']
+    [words_parsed, what_is_left_to_parse] = get_next_word([words_parsed_so_far, chars])
+    expect(words_parsed).to eq(["one", "two"])
   end
 end
