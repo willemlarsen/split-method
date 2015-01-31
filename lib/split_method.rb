@@ -49,5 +49,7 @@ def remove_leading_spaces!(chars)
 end
 
 def get_next_word(state)
-  [:whatever, ['c', 'd']]
+  to_parse = state[1]
+  first_word!(to_parse)
+  [:whatever, to_parse]
 end
