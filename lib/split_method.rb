@@ -49,7 +49,8 @@ def remove_leading_spaces!(chars)
 end
 
 def get_next_word(state)
+  so_far = state[0]
   to_parse = state[1]
-  first_word!(to_parse)
-  [:whatever, to_parse]
+  so_far.push(first_word!(to_parse))
+  [so_far, to_parse]
 end
