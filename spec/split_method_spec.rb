@@ -1,6 +1,6 @@
 require 'split_method'
 
-describe 'splitter' do 
+xdescribe 'splitter' do 
   it 'converts a string into a list of words' do 
     string_a = '   Go  there     '
     string_b = 'Come here'
@@ -59,6 +59,7 @@ describe 'remove_leading_spaces!' do
     expect(list).to eq(["O", "v", "e", "r", " ", "t", "h", "e", "r", "e"])
   end
 end
+
 
 
 
