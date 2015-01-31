@@ -75,3 +75,8 @@ describe 'next word getter' do
     expect(result[1]).to eq(['c', 'd'])
   end
 end
+
+describe "putting it all together" do
+  it "works!" do
+  end
+end
