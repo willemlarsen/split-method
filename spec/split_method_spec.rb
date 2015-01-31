@@ -61,6 +61,9 @@ describe 'remove_leading_spaces!' do
 end
 
 describe 'next word getter' do
+  it 'adds next word to words found so far' do
+  end
+
   it 'remembers what"s left to parse' do
     so_far = []
     to_parse = ['a', 'b', ' ', 'c', 'd']
