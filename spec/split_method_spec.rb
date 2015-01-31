@@ -78,5 +78,7 @@ end
 
 describe "putting it all together" do
   it "works!" do
+    result = split_words("one two buckle")
+    expect(result).to eq(["one", "two", "buckle"])
   end
 end
