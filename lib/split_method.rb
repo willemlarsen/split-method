@@ -57,9 +57,9 @@ end
 def split_words(string)
   so_far = []
   to_parse = character_splitter(string)
-  current_state = [so_far, to_parse]
-  new_state = get_next_word(current_state)
-  new_new_state = get_next_word(new_state)
-  so_far = new_new_state[0]
+  state = [so_far, to_parse]
+  state = get_next_word(state)
+  state = get_next_word(state)
+  so_far = state[0]
   [so_far[0], so_far[1], "buckle"]
 end
