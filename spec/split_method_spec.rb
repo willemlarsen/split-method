@@ -60,3 +60,11 @@ describe 'remove_leading_spaces!' do
   end
 end
 
+describe 'next word getter' do
+  it 'remembers what"s left to parse' do
+    so_far = []
+    to_parse = ['a', 'b', ' ', 'c', 'd']
+    result = get_next_word([so_far, to_parse])
+    expect(result[1]).to eq(['c', 'd'])
+  end
+end
