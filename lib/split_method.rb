@@ -53,3 +53,6 @@ def get_next_word(state)
   so_far.push(first_word!(to_parse))
   [so_far, to_parse]
 end
+
+def split_words(string)
+end
