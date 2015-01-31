@@ -60,6 +60,7 @@ describe 'remove_leading_spaces!' do
   end
 end
 
-
-
-
+describe 'next word getter' do
+  it 'remembers what"s left to parse' do
+  end
+end
